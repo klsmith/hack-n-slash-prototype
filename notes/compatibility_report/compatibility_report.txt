@@ -1,0 +1,62 @@
+Converting GML script: ${project_dir}\scripts\controls_up\controls_up.gml
+Converted string - line 3: 'W' -> "W"
+Converted string - line 6: 'W' -> "W"
+Converted string - line 9: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\controls_right\controls_right.gml
+Converted string - line 3: 'D' -> "D"
+Converted string - line 6: 'D' -> "D"
+Converted string - line 9: 'D' -> "D"
+
+Converting GML script: ${project_dir}\scripts\controls_left\controls_left.gml
+Converted string - line 3: 'A' -> "A"
+Converted string - line 6: 'A' -> "A"
+Converted string - line 9: 'A' -> "A"
+
+Converting GML script: ${project_dir}\scripts\controls_down\controls_down.gml
+Converted string - line 3: 'S' -> "S"
+Converted string - line 6: 'S' -> "S"
+Converted string - line 9: 'S' -> "S"
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\scripts\to_gui_x\to_gui_x.gml
+Converted builtin - line 2: view_xview[argument1] -> __view_get( e__VW.XView, argument1 )
+Converted builtin - line 1: view_wview[argument1] -> __view_get( e__VW.WView, argument1 )
+Converted builtin - line 1: view_wport[argument1] -> __view_get( e__VW.WPort, argument1 )
+
+Converting GML script: ${project_dir}\scripts\to_gui_y\to_gui_y.gml
+Converted builtin - line 2: view_yview[argument1] -> __view_get( e__VW.YView, argument1 )
+Converted builtin - line 1: view_hview[argument1] -> __view_get( e__VW.HView, argument1 )
+Converted builtin - line 1: view_hport[argument1] -> __view_get( e__VW.HPort, argument1 )
+
+Font font_arial_black has been converted to font family Arial Black (Black)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_arial_black\font_arial_black.gms1.png
+Font font_debug has been converted to font family Consolas (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_debug\font_debug.gms1.png
+Converting GML script: ${project_dir}\objects\controller\Step_0.gml
+Converted string - line 8: 'M' -> "M"
+Converted string - line 11: 'R' -> "R"
+
+Converting GML script: ${project_dir}\objects\obj_char\Step_2.gml
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview[0] = cam_new_x - (view_wview[0] / 2 -> __view_set( e__VW.XView, 0, cam_new_x - (view_wview[0] / 2 )
+Converted builtin - line 6: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 14: view_yview[0] = cam_new_y - (view_hview[0] / 2 -> __view_set( e__VW.YView, 0, cam_new_y - (view_hview[0] / 2 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 13: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 14: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Missing audiogroup for sound: 'sound_steps' - setting to default audio group
+Missing audiogroup for sound: 'sound_music' - setting to default audio group
+Missing audiogroup for sound: 'sound_roll' - setting to default audio group
+Missing audiogroup for sound: 'sound_slash' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
