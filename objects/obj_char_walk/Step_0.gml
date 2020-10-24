@@ -17,7 +17,7 @@ if (controls_down()) {
 
 if (dx != 0 || dy != 0) {
     direction = point_direction(0, 0, dx, dy);
-    speed = walk_speed;
+    speed = global.walk_speed;
     image_speed = 1;
     var dir, sp;
     if (hspeed != 0 && place_meeting(x + hspeed, y, obj_crab)) {
@@ -51,7 +51,7 @@ else {
     audio_stop_sound(sound_steps);
 }
 if (place_meeting(x, y, obj_crab)) {
-    move_outside_solid(-direction, walk_speed);
+    move_outside_solid(-direction, global.walk_speed);
 }
 sprite_index = scr_sprite_direction(
     spr_char_right,

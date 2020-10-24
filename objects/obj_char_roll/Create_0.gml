@@ -1,5 +1,2 @@
-event_inherited();
-speed = roll_speed;
-image_speed = 1;
+speed = global.roll_speed;
 audio_play_sound(sound_roll, 0, false);
-

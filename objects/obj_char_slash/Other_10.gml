@@ -11,7 +11,7 @@ sprite_index = scr_sprite_direction(
 with(instance_create(x, y, obj_sword)) {
     owner = other;
     direction = other.direction;
-	push_speed = other.slash_speed * 4;
+	push_speed = global.slash_speed * 4;
     event_user(0);
 }
 

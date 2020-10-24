@@ -8,4 +8,3 @@ sprite_index = scr_sprite_direction(
     spr_char_roll_down,
     spr_char_roll_down_right
 );
-
