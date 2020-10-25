@@ -53,7 +53,7 @@ else {
 if (place_meeting(x, y, obj_crab)) {
     move_outside_solid(-direction, global.walk_speed);
 }
-sprite_index = scr_sprite_direction(
+sprite_index = sprite_8_direction(
     spr_char_right,
     spr_char_up_right,
     spr_char_up,

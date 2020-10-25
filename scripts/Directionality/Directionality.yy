@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_sprite_direction",
+  "name": "Directionality",
   "tags": [],
   "resourceType": "GMScript",
 }

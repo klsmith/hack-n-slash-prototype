@@ -1,4 +1,4 @@
-sprite_index = scr_sprite_direction(
+sprite_index = sprite_8_direction(
     spr_sword_down_right,
     spr_sword_up_right,
     spr_sword_up_right,
