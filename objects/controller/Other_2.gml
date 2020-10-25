@@ -1,3 +1,4 @@
+char_cam_on_game_start();
 // set relative volume of sounds
 audio_sound_gain(sound_music, 0.25, 0);
 audio_sound_gain(sound_steps, 1, 0);
