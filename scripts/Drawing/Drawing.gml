@@ -1,3 +1,17 @@
+
+function draw_ellipse_centered(center_x, center_y, width, height, outline) {
+	var w_radius = width / 2,
+	    h_radius = height / 2;
+	draw_ellipse(
+	    center_x - w_radius,
+	    center_y - h_radius,
+	    center_x + w_radius,
+	    center_y + h_radius,
+	    outline
+	);
+}
+
+/*
 function draw_drop_shadow() {
 	var previous_color = draw_get_colour(),
 	    previous_alpha = draw_get_alpha();
@@ -15,3 +29,4 @@ function draw_drop_shadow() {
 	draw_set_color(previous_color);
 	draw_set_alpha(previous_alpha);
 }
+*/

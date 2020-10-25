@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "to_gui_x",
+  "name": "GUI",
   "tags": [],
   "resourceType": "GMScript",
 }
