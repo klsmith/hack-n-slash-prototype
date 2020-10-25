@@ -6,11 +6,10 @@
 function controls() {
 	var result;
 	for(var i = 0; i < argument_count; i++) {
-		var control = argument[i],
-			c_method = control[0],
-			c_button = control[1];
-		result = c_method(c_button);
+		// run argument as function
+		result = argument[i]();
 		if (result) {
+			// if it returns true, short-circuit the loop!
 			break;
 		}
 	}
@@ -20,82 +19,82 @@ function controls() {
 /* DOWN */
 function controls_down() {
 	return controls(
-		[keyboard_check, ord("S")], 
-		[keyboard_check, vk_down]
+		function() { return keyboard_check(ord("S")); },
+		function() { return keyboard_check(vk_down); }
 	);
 }
 
 /* LEFT */
 function controls_left() {
 	return controls(
-		[keyboard_check, ord("A")], 
-		[keyboard_check, vk_left]
+		function() { return keyboard_check(ord("A")); },
+		function() { return keyboard_check(vk_left); }
 	);
 }
 
 /* RIGHT */
 function controls_right() {
 	return controls(
-		[keyboard_check, ord("D")], 
-		[keyboard_check, vk_right]
+		function() { return keyboard_check(ord("D")); },
+		function() { return keyboard_check(vk_right); }
 	);
 }
 
 /* UP */
 function controls_up() {
 	return controls(
-		[keyboard_check, ord("W")], 
-		[keyboard_check, vk_up]
+		function() { return keyboard_check(ord("W")); },
+		function() { return keyboard_check(vk_up); }
 	);
 }
 
 /* ROLL */
 function controls_roll() {
 	 return controls(
-		[keyboard_check_pressed, vk_space],
-		[mouse_check_button_pressed, mb_right]
+		function() { return keyboard_check_pressed(vk_space); },
+		function() { return mouse_check_button_pressed(mb_right); }
 	 );
 }
 
 /* SLASH */
 function controls_slash() {
 	return controls(
-		[mouse_check_button_pressed, mb_left]
+		function() { return mouse_check_button_pressed(mb_left); }
 	);
 }
 
 /* DECREASE LOOKAHEAD */
 function controls_decrease_lookahead() {
 	return controls(
-		[keyboard_check, vk_lbracket]
+		function() { return keyboard_check(vk_lbracket); }
 	);
 }
 
 /* INCREASE LOOKAHEAD */
 function controls_increase_lookahead() {
 	return controls(
-		[keyboard_check, vk_rbracket]
+		function() { return keyboard_check(vk_rbracket); }
 	);
 }
 
 /* TOGGLE DEBUG */
 function controls_toggle_debug() {
 	return controls(
-		[keyboard_check_pressed, ord("M")]
+		function() { return keyboard_check_pressed(ord("M")); }
 	);
 }
 
 /* RESTART GAME */
 function controls_restart_game() {
 	return controls(
-		[keyboard_check_pressed, ord("R")]
+		function() { return keyboard_check_pressed(ord("R")); }
 	);
 }
 
 /* END GAME */
 function controls_end_game() {
 	return controls(
-		[keyboard_check_pressed, vk_escape]
+		function() { return keyboard_check_pressed(vk_escape); }
 	);
 }
 
