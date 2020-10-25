@@ -2,10 +2,7 @@
   "spriteId": null,
   "solid": true,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_crab_mask",
-    "path": "sprites/spr_crab_mask/spr_crab_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
