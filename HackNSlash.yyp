@@ -34,7 +34,7 @@
     {"id":{"name":"sound_music","path":"sounds/sound_music/sound_music.yy",},"order":1,},
     {"id":{"name":"sound_roll","path":"sounds/sound_roll/sound_roll.yy",},"order":2,},
     {"id":{"name":"sound_slash","path":"sounds/sound_slash/sound_slash.yy",},"order":3,},
-    {"id":{"name":"Directionality","path":"scripts/Directionality/Directionality.yy",},"order":1,},
+    {"id":{"name":"Direction","path":"scripts/Direction/Direction.yy",},"order":1,},
     {"id":{"name":"Controls","path":"scripts/Controls/Controls.yy",},"order":8,},
     {"id":{"name":"draw_drop_shadow","path":"scripts/draw_drop_shadow/draw_drop_shadow.yy",},"order":3,},
     {"id":{"name":"draw_ellipse_centered","path":"scripts/draw_ellipse_centered/draw_ellipse_centered.yy",},"order":4,},
