@@ -6,11 +6,10 @@
 function controls() {
 	var result;
 	for(var i = 0; i < argument_count; i++) {
-		var control = argument[i];
-		var c_method = control[0];
-		var c_button = control[1];
-		// undefined makes the method run as 'self'
-		result = method(undefined, c_method)(c_button);
+		var control = argument[i],
+			c_method = control[0],
+			c_button = control[1];
+		result = c_method(c_button);
 		if (result) {
 			break;
 		}
