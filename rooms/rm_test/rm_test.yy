@@ -94,12 +94,12 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_5AFD4BEE","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_C68E5772","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_D37FBD21","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_A9673EF9","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_CBD505D9","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_9E55F0D6","path":"rooms/rm_test/rm_test.yy",},
-    {"name":"inst_5AFD4BEE","path":"rooms/rm_test/rm_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
