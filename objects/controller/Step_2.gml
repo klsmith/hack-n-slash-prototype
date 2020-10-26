@@ -1,1 +1,0 @@
-char_cam_end_step();
