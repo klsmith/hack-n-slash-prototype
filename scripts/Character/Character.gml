@@ -21,21 +21,21 @@ function char_cam_end_step() {
 		// no character to follow
 		return;
 	}
-	var camera = view_get_camera(char_cam);
-	var max_lookahead = global.lookahead_factor * (character.speed * (character.sprite_width / 2));
-	var target_x = character.x + lengthdir_x(max_lookahead, character.direction);
-	var target_y = character.y + lengthdir_y(max_lookahead, character.direction);
-	var cam_x = camera_get_view_x(camera);
-	var cam_y = camera_get_view_y(camera);
-	var cam_width = camera_get_view_width(camera);
-	var cam_height = camera_get_view_height(camera);
-	var cam_center_x = cam_x + (cam_width / 2);
-	var cam_center_y = cam_y + (cam_height / 2);
-	var cam_dir = point_direction(cam_center_x, cam_center_y, target_x, target_y);
-	var cam_dis = point_distance(cam_center_x, cam_center_y, target_x, target_y);
-	var lookaccel = max(character.speed, cam_dis / 8);
-	var cam_new_x = cam_x + lengthdir_x(min(cam_dis, lookaccel), cam_dir);
-	var cam_new_y = cam_y + lengthdir_y(min(cam_dis, lookaccel), cam_dir);
+	var camera = view_get_camera(char_cam),
+		max_lookahead = global.lookahead_factor * (character.speed * (character.sprite_width / 2)),
+		target_x = character.x + lengthdir_x(max_lookahead, character.direction),
+		target_y = character.y + lengthdir_y(max_lookahead, character.direction),
+		cam_x = camera_get_view_x(camera),
+		cam_y = camera_get_view_y(camera),
+		cam_width = camera_get_view_width(camera),
+		cam_height = camera_get_view_height(camera),
+		cam_center_x = cam_x + (cam_width / 2),
+		cam_center_y = cam_y + (cam_height / 2),
+		cam_dir = point_direction(cam_center_x, cam_center_y, target_x, target_y),
+		cam_dis = point_distance(cam_center_x, cam_center_y, target_x, target_y),
+		lookaccel = max(character.speed, cam_dis / 8),
+		cam_new_x = cam_x + lengthdir_x(min(cam_dis, lookaccel), cam_dir),
+		cam_new_y = cam_y + lengthdir_y(min(cam_dis, lookaccel), cam_dir);
 	camera_set_view_pos(camera, cam_new_x, cam_new_y);
 }
 

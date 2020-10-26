@@ -74,14 +74,14 @@ else if (!audio_is_playing(sound_steps)) {
 }
 
 if (controls_roll()) {
-    with(instance_create(x, y, obj_char_roll)) {
+    with(instance_create_depth(x, y, -y, obj_char_roll)) {
         direction = other.direction;
         image_index = 0;
     }
     instance_destroy();
 }
 else if (controls_slash()) {
-    with(instance_create(x, y, obj_char_slash)) {
+    with(instance_create_depth(x, y, -y, obj_char_slash)) {
         direction = other.direction;
         image_index = 0;
         event_user(0);
