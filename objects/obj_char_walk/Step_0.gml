@@ -1,4 +1,3 @@
-
 var dx = 0;
 var dy = 0;
 
@@ -19,39 +18,11 @@ if (dx != 0 || dy != 0) {
     direction = point_direction(0, 0, dx, dy);
     speed = global.walk_speed;
     image_speed = 1;
-    var dir, sp;
-    if (hspeed != 0 && place_meeting(x + hspeed, y, obj_crab)) {
-        if (hspeed > 0) {
-            dir = 0;
-            sp = 0;
-        } 
-        else {
-            dir = 180;
-            sp = -0;
-        }
-        move_contact_solid(dir, abs(hspeed));
-        hspeed = sp;
-    }
-    if (vspeed != 0 && place_meeting(x, y + vspeed, obj_crab)) {
-        if (vspeed > 0) {
-            dir = 270;
-            sp = 0;
-        }
-        else {
-            dir = 90;
-            sp = -0;
-        }
-        move_contact_solid(dir, abs(vspeed));
-        vspeed = sp;
-    }
 }
 else {
     speed = 0;
     image_index = 0;
     audio_stop_sound(sound_steps);
-}
-if (place_meeting(x, y, obj_crab)) {
-    move_outside_solid(-direction, global.walk_speed);
 }
 sprite_index = sprite_8_direction(
     spr_char_right,

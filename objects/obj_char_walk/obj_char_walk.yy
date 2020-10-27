@@ -3,7 +3,7 @@
     "name": "spr_char_down",
     "path": "sprites/spr_char_down/spr_char_down.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
     "name": "spr_char_mask",

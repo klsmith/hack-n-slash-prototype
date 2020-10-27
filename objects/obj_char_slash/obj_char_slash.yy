@@ -3,7 +3,7 @@
     "name": "spr_char_slash_down_left",
     "path": "sprites/spr_char_slash_down_left/spr_char_slash_down_left.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": {
     "name": "spr_char_mask",

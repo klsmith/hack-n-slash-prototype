@@ -3,7 +3,7 @@
     "name": "spr_crab_idle",
     "path": "sprites/spr_crab_idle/spr_crab_idle.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": {
     "name": "spr_crab_mask",

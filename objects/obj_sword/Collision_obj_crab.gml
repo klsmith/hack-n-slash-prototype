@@ -1,5 +1,7 @@
 with(other) {
-    direction = obj_char_slash.direction;
-	speed = global.slash_speed * 8;
+	direction = other.direction;
+	speed = global.roll_speed;
 }
-
+with(obj_char_slash) {
+	speed = -(speed / 4);
+}

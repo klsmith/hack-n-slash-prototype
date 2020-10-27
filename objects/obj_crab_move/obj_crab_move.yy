@@ -3,7 +3,7 @@
     "name": "spr_crab_move",
     "path": "sprites/spr_crab_move/spr_crab_move.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": {
     "name": "spr_crab_mask",
