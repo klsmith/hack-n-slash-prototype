@@ -1,4 +1,1 @@
-with(instance_create_depth(x, y, -y, obj_char_walk)) {
-    direction = other.direction;
-}
-instance_destroy();
+instance_change(obj_char_walk, true);
